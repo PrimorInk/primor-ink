@@ -860,3 +860,27 @@ h2 {
 .example-img:hover {
   transform: scale(1.03);
 }
+
+.nav {
+  display: none;
+}
+
+.nav.active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #3b155f; /* roxo do header */
+    width: 100%;
+    padding: 20px;
+    display: none;
+  }
+
+  .nav.active {
+    display: block;
+  }
+}
